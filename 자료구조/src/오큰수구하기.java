@@ -1,3 +1,4 @@
+package 자료구조.src;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,6 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Stack;
 import java.util.StringTokenizer;
+
 
 public class 오큰수구하기 {
 	// 스택에 인덱스를 저장해도 된다. 

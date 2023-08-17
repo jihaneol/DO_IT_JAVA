@@ -1,5 +1,7 @@
+package DP.src;
 import java.util.*;
 import java.io.*;
+
 
 public class 좋은수{
     public static void main(String[] args) throws IOException{

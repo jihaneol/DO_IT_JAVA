@@ -1,6 +1,8 @@
+package 정렬.src;
 import java.util.Scanner;
 import java.util.stream.Stream;
 import java.util.*;
+
 
 public class 삽입정렬 {
 	static int [] arr;

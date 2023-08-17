@@ -1,3 +1,5 @@
+package 팀노트.src;
+
 import java.util.*;
 import java.io.*;
 public class 유니온파인드 {

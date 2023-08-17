@@ -1,9 +1,11 @@
+package 정렬.src;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
+
 
 public class 병합정렬 {
 	private static int[] A, tmp; // 원본 임시.

@@ -1,5 +1,7 @@
+package 백준.src;
 import java.io.*;
 import java.util.*;
+
 
 public class 최솟값찾기 {
 

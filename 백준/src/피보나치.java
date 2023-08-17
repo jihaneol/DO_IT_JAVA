@@ -1,4 +1,6 @@
+package 백준.src;
 import java.util.Scanner;
+
 
 public class 피보나치{
     public static void main(String[] arg){

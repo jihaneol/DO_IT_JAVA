@@ -1,9 +1,8 @@
+package 자료구조.src;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
-
-
 public class 절댓값힙 {
 	static BufferedReader br;
 	static StringTokenizer st;

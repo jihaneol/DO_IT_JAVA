@@ -1,3 +1,4 @@
+package 백준.src;
 import java.util.*;
 
 // 빅O(n)

@@ -1,4 +1,4 @@
-
+package 팀노트.src;
 public class 비트마스킹 {
 
 	public static void main(String[] args) {

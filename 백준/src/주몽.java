@@ -1,5 +1,7 @@
+package 백준.src;
 import java.util.*;
 import java.io.*;
+
 
 public class 주몽{
     public static void main(String[] args) throws IOException{

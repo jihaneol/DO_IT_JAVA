@@ -1,7 +1,9 @@
+package 정렬.src;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+
 
 public class 퀵정렬 {
 	public static void main(String[] args) throws IOException {

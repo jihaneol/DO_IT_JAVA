@@ -11,8 +11,7 @@ public class 경로찾기 {
 		br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.valueOf(br.readLine());
 		int[][] map = new int[n][n];
-		int[][] D = new int[n][n];
-		
+
 		for(int i=0; i<n; i++) {
 			st = new StringTokenizer(br.readLine());
 			

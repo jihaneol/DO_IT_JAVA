@@ -4,8 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Io {
-    static int cntI, cntO;
-    static StringBuilder findP;
+  
     static char P[];
 
     public static void main(String[] args) throws IOException {

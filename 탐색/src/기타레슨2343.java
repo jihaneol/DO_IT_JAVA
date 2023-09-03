@@ -1,3 +1,5 @@
+package 탐색.src;
+
 import java.io.*;
 import java.util.*;
 import java.util.stream.Stream;

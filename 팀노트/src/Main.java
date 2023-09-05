@@ -7,6 +7,8 @@ public class Main {
         System.out.println(Integer.compare(1,1)); // 0
         System.out.println(Integer.compare(2,1)); // 내림 1
 
+        System.out.println(("02151".charAt(1)-'0')+5);
+
     }
 
 }

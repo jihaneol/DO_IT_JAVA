@@ -1,3 +1,5 @@
+package 백준.src;
+
 import java.util.*;
 import java.io.*;
 public class Main{

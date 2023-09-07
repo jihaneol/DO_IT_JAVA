@@ -1,4 +1,4 @@
-package 다익스트라;
+package 탐색.src.다익스트라;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -44,11 +44,11 @@ public class k번째최단경로찾기 {
 		
 		PriorityQueue<Integer>[] queueDist = new PriorityQueue[N+1];
 		
-		for(int i=1; i<=N; i++) {
-			queueDist[i] = new PriorityQueue<Integer>((a,b)->{
-				return a<b?1:-1;
-			});
-		}
+//		for(int i=1; i<=N; i++) {
+//			queueDist[i] = new PriorityQueue<Integer>((a,b)->{
+//				return a<b?1:-1;
+//			});
+//		}
 		// 다익스트라
 		PriorityQueue<Node> pq = new PriorityQueue();
 		queueDist[1].add(0);

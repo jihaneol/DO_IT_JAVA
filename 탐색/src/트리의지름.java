@@ -1,4 +1,6 @@
-	import java.io.*;
+package 탐색.src;
+
+import java.io.*;
 	import java.util.*;
 	
 	public class 트리의지름 {

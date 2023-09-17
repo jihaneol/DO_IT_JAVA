@@ -1,20 +1,26 @@
 package 팀노트.src;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Scanner sc = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder();
-        int N = sc.nextInt()/4;
-        for(int i=0; i<N; i++){
-            sb.append("long ");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = null;
+//        Scanner sc = new Scanner(System.in);
+//        StringBuilder sb = new StringBuilder();
+//        Formatter f = new Formatter(sb);
+        int N = Integer.valueOf(br.readLine());
+        int dp[] = new int[201];
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < N; i++) {
+            dp[100+Integer.valueOf(st.nextToken())]++;
         }
-        sb.append("int");
-        System.out.println(sb);
+        int k = Integer.valueOf(br.readLine());
+        System.out.println(dp[100+k]);
 
     }
 

@@ -52,9 +52,10 @@ public class 웜홀 {
 			int INF = 999999999;
 			Arrays.fill(dist,INF);
 			dist[1]=0;
+			boolean flag = true;
 			// belman dist[j] !=INF 주위하자 !!
 			for(int i=0; i<N-1; i++) {
-				boolean flag = true;
+				flag = true;
 				for(int j=1; j<N+1; j++) {
 					for(Edge now : edges[j]) {
 						if(dist[j]!=INF && dist[now.end]>dist[j]+now.cost) {
@@ -67,11 +68,16 @@ public class 웜홀 {
 				if(flag) break;
 				
 			}
+			if(flag){
+				System.out.println("NO");
+				continue;
+			}
+
 			boolean chk = true;
 			for(int j=1; j<N+1; j++) {
 				for(Edge now : edges[j]) {
 					if(dist[j]!=INF && dist[now.end]>dist[j]+now.cost) {
-						chk = false;
+						chk = false; // 사이클
 					}
 					
 				}

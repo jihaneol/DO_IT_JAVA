@@ -9,18 +9,29 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = null;
-//        Scanner sc = new Scanner(System.in);
-//        StringBuilder sb = new StringBuilder();
-//        Formatter f = new Formatter(sb);
-        int N = Integer.valueOf(br.readLine());
-        int dp[] = new int[201];
-        st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < N; i++) {
-            dp[100+Integer.valueOf(st.nextToken())]++;
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.valueOf(st.nextToken());
+        int M = Integer.valueOf(st.nextToken());
+
+        int[] arr = new int[N+1];
+
+        for(int c=0; c<M; c++){
+            st = new StringTokenizer(br.readLine());
+            int i = Integer.valueOf(st.nextToken());
+            int j = Integer.valueOf(st.nextToken());
+            int k = Integer.valueOf(st.nextToken());
+
+            for(int x=i;x<=j;x++){
+                arr[x] = k;
+            }
         }
-        int k = Integer.valueOf(br.readLine());
-        System.out.println(dp[100+k]);
+        StringBuilder sb = new StringBuilder();
+        for(int i=1; i<=N; i++){
+            sb.append(arr[i]).append(" ");
+        }
+        System.out.println(sb);
+
 
     }
 

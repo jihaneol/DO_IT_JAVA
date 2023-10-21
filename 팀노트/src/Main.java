@@ -3,54 +3,30 @@ package 팀노트.src;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.Queue;
-import java.util.Stack;
-import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) throws NumberFormatException, IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(in.readLine());// 학생 수
-        StringTokenizer st = new StringTokenizer(in.readLine());
-        int now = 1;
-        boolean flag = false;
 
-        Queue<Integer> q = new ArrayDeque<>();
-        Stack<Integer> stack = new Stack<>();
+    public static void main(String[] args) throws IOException {
 
-        for(int i=0; i<N; i++){
-            q.add(Integer.valueOf(st.nextToken()));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int num = Integer.valueOf(br.readLine());
+
+        int temp = num;
+        int cnt = 0;
+
+        while(true){
+            int a = temp/10; // 10자리
+            int b = temp%10; // 1자리
+            int c = (a+b)%10; // b 뒤에 있을 수
+            temp = b*10 + c;
+            cnt++;
+            if(temp==num) break;
+
         }
 
-        while(!q.isEmpty()){
-            if(q.peek()==now){
-                q.poll();
-                now++;
-
-            }else if(!stack.isEmpty() && stack.peek() == now){
-                stack.pop();
-                now++;
-            }else{
-                stack.push(q.poll());
-            }
-        }
-        while(!stack.isEmpty()){
-            int studunt = stack.pop();
-            if(studunt!=now){
-                flag = true;
-                break;
-            }else{
-                now ++;
-            }
-        }
-        if(flag){
-            System.out.println("Sad");
-        }else{
-            System.out.println("Nice");
-        }
+        System.out.println(cnt);
 
 
     }
-
 }
